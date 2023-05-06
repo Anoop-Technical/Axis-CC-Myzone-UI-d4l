@@ -1,0 +1,345 @@
+body {
+    background: linear-gradient(180deg, #82133F 415px, #ffffff 415px);
+    background-repeat: no-repeat;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.axis-bank-cc-card-detail {
+    margin-bottom: 50px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.top-section {
+    text-align: center;
+    margin: 25px 0 50px 0;
+}
+
+.top-section h4 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.0124em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.semi-heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.0124em;
+    color: #27364B;
+    margin-bottom: 15px;
+}
+
+.form-section {
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.form-section h5 {
+    margin: 0 0 30px 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: #27364B;
+}
+
+.form-section h4 {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #031D5B;
+}
+
+.stepper_wrapper {
+    background: #F6F8FC;
+    padding: 30px;
+}
+
+.stepper_wrapper h4 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.0048em;
+    color: #031D5B;
+    margin-bottom: 15px;
+}
+
+.stepper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stepper_box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.step_line {
+    display: block;
+    background: #AE285D;
+    width: 105px;
+    height: 2px;
+    position: absolute;
+    left: -102px;
+}
+
+.step_digit {
+    background: #AE285D;
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: -0.0048em;
+    color: #FFFFFF;
+    z-index: 99;
+}
+
+.step_txt {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: -0.0048em;
+    color: #031D5B;
+}
+
+.stepper_mob {
+    display: none;
+}
+/* OTP Modal */
+#otpModal .modal-dialog {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1px;
+}
+#otpModal .modal-content {
+    padding: 20px;
+}
+#otpModal .modal-content .card-body {
+    padding: 20px 0;
+    text-align: center;
+}
+#otpModal .modal-content .card-body h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    color: #1E2A3B;
+    margin-bottom: 10px;
+}
+#otpModal .modal-content .card-body p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #27364B;
+    margin-bottom: 20px;
+}
+#otpModal .digit-group .digit {
+    width: 56.92px;
+    height: 54px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 9px;
+}
+#otpModal .digit-group .digit:hover,
+#otpModal .digit-group .digit:focus,
+#otpModal .digit-group .digit:active,
+#otpModal .digit-group .digit:focus-visible,
+#otpModal .digit-group .digit:focus-within {
+    outline: #AE285D;
+    box-shadow: none;
+}
+.__mr_20 {
+    margin-right: 15px;
+}
+.submit_btn {
+    max-width: 325px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    background: #AE285D;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 24px 16px;
+    margin: 0 auto;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+}
+.__theme_color {
+    color: #26282E;
+    font-weight: 500;
+    text-decoration: underline;
+}
+#otpModal .modal-content .card-body .form-group .help-block.otp_error_box {
+    display: none;
+}
+#otpModal .modal-content .card-body .form-group.has-error .help-block.otp_error_box {
+    font-size: 11px;
+    line-height: 11px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%);
+    color: red;
+    display: block;
+}   
+.btn-close:focus,
+.btn-close:hover,
+.btn-close:active {
+    box-shadow: none;
+}
+/* End OTP */
+@media screen and (min-width: 1400px) {
+    .step_line {
+        width: 145px;
+        left: -142px;
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    .stepper_box {
+        flex-direction: column;
+    }
+
+    .step_line {
+        top: 12px;
+    }
+
+    .step_line_2 {
+        width: 140px;
+        left: -120px;
+    }
+
+    .step_line_3 {
+        width: 192px;
+        left: -119px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    body {
+        background: #82133F;
+    }
+
+    .stepper {
+        justify-content: space-between;
+    }
+
+    .top-section h4 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .top-section {
+        margin: 15px 0 30px 0;
+    }
+
+    .step_line {
+        width: 140px;
+        left: -134px;
+    }
+
+    .stepper_box {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .semi-heading {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .stepper_box {
+        flex-direction: column;
+    }
+
+    .step_line {
+        top: 12px;
+    }
+
+    .step_line_2 {
+        width: 135px;
+        left: -118px;
+    }
+
+    .step_line_3 {
+        width: 185px;
+        left: -125px;
+    }
+    #otpModal .modal-content .card-body h2 {
+        font-size: 20px;
+        line-height: 33px;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+
+    .stepper_wrapper,
+    .form-section {
+        padding: 25px 15px;
+    }
+
+    .step_txt {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .form-section h4 {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .form-section h5 {
+        margin: 10px 0 25px 0;
+    }
+
+    .stepper_mob {
+        display: block;
+        text-align: center;
+    }
+
+    .stepper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .step_txt {
+        font-size: 11px;
+    }
+    #otpModal .modal-content {
+        padding: 15px;
+    }
+}
